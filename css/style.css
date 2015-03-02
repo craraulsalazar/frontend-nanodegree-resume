@@ -91,6 +91,21 @@ a {
   display: none;
 }
 
+#skills {
+
+    display: block;
+    float: left;
+}
+
+#skills > li {
+
+    width: 400px;
+}
+
+.onlineCourseH3 {
+    padding-left: 0px;
+}
+
 .orange {
   background-color: #F5AE23;
 }
