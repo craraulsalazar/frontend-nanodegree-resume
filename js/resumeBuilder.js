@@ -56,6 +56,65 @@ var work = {
 }
 
 
+//display education
+
+var education = {
+    schools: [
+        {
+            name: "Conestoga College",
+            degree: "Computer Programmer Analyst",
+            dates: "1993-1996",
+            location:"Kitchener, Ontario",
+            url:"http://www.conestogac.on.ca/",
+            majors: ["Algorithms","Data Management"]
+        },
+        {
+            name: "University of Waterloo",
+            degree: "Computer Science BA",
+            dates: "1997-2001",
+            location: "Waterloo, Ontario",
+            url:"https://uwaterloo.ca/",
+            majors: ["Calculus","Statistic"]
+        }
+
+    ],
+    onlineCourses: [
+        {
+            title: "Front-End Web Developer Nanodegree",
+            school: "Udacity",
+            dates:"Jan 2015",
+            url:"https://www.udacity.com"
+        }
+    ]
+    ,
+    display: function () {
+    }
+}
+
+
+//projects
+
+var project = {
+    projects: [
+        {
+            title: "Waste Management paper",
+            dates: "2003-2004",
+            description:"lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+            images: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI9IICPihN9FJ47lbuO-MmmqIXmHW6cLB2grttO574t1JthDhJ","https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlI8JH_oo6dRf8L9ExfvHxU1ncBYs-feObbwmr-jX7_38V4UMVgg"]
+        },
+        {
+            title: "Better local governance",
+            dates: "1996-1997",
+            description:"lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+            images: ["https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlI8JH_oo6dRf8L9ExfvHxU1ncBYs-feObbwmr-jX7_38V4UMVgg","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI9IICPihN9FJ47lbuO-MmmqIXmHW6cLB2grttO574t1JthDhJ"]
+        }
+    ]
+    ,
+    display: function () {
+    }
+
+}
+
 
 bio.display = function() {
 
@@ -117,6 +176,8 @@ bio.display = function() {
 
     }
 
+    //adding button produces an error
+    //$("#header").append(internationalizeButton);
 };
 
 
@@ -155,40 +216,6 @@ work.display = function() {
 
 
 
-//display education
-
-var education = {
-    schools: [
-        {
-            name: "Conestoga College",
-            degree: "Computer Programmer Analyst",
-            dates: "1993-1996",
-            location:"Kitchener, Ontario",
-            url:"http://www.conestogac.on.ca/",
-            majors: ["Algorithms","Data Management"]
-        },
-        {
-            name: "University of Waterloo",
-            degree: "Computer Science BA",
-            dates: "1997-2001",
-            location: "Waterloo, Ontario",
-            url:"https://uwaterloo.ca/",
-            majors: ["Calculus","Statistic"]
-        }
-
-    ],
-    onlineCourses: [
-        {
-            title: "Front-End Web Developer Nanodegree",
-            school: "Udacity",
-            dates:"Jan 2015",
-            url:"https://www.udacity.com"
-        }
-    ]
-    ,
-    display: function () {
-    }
-}
 
 
 education.display = function() {
@@ -244,28 +271,6 @@ education.display = function() {
 }
 
 
-//projects
-
-var project = {
-    projects: [
-        {
-            title: "Waste Management paper",
-            dates: "2003-2004",
-            description:"lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-            images: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI9IICPihN9FJ47lbuO-MmmqIXmHW6cLB2grttO574t1JthDhJ","https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlI8JH_oo6dRf8L9ExfvHxU1ncBYs-feObbwmr-jX7_38V4UMVgg"]
-        },
-        {
-            title: "Better local governance",
-            dates: "1996-1997",
-            description:"lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-            images: ["https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlI8JH_oo6dRf8L9ExfvHxU1ncBYs-feObbwmr-jX7_38V4UMVgg","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI9IICPihN9FJ47lbuO-MmmqIXmHW6cLB2grttO574t1JthDhJ"]
-        }
-    ]
-    ,
-    display: function () {
-    }
-
-}
 
 project.display = function() {
 

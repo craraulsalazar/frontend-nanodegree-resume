@@ -87,7 +87,14 @@ function logClicks(x,y) {
 $(document).click(function(loc) {
   // your code goes here!
 
-    logClicks(loc.clientX, loc.clientY);
+    //logClicks(loc.clientX, loc.clientY);
+
+    google.maps.event.addListener(map, "click", function (e) {
+
+        //lat and lng is available in e object
+        logClicks(e.latLng.k, e.latLng.D);
+
+    });
 
 });
 
